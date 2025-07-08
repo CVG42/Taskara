@@ -7,7 +7,7 @@ using UnityEngine;
 public class DatabaseManager : Singleton<IDatabaseSource>, IDatabaseSource
 {
     private SQLiteConnection _database;
-    private string _databasePath => Path.Combine(Application.persistentDataPath, "TaskaraDB.sqlite");
+    private string _databasePath => Path.Combine(Application.persistentDataPath, "Tasks.sqlite");
 
     public void Init()
     {
